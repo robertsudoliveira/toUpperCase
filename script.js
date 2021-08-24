@@ -11,7 +11,7 @@ meuformulario.addEventListener("submit", function (event) {
         return;
     }
 
-    var novatarefa = `<li>${tarefa.value} <button>deletar tarefa</button> </li>`;
+    var novatarefa = `<li>${tarefa.value} <button>tarefa concluida</button><button>deletar tarefa</button> </li>`;
     
 
     minhastarefas.innerHTML += novatarefa;
