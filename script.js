@@ -1,16 +1,18 @@
+var meuformulario = document.getElementById("meuformulario");
+var minhastarefas = document.getElementById("minhastarefas");
+var tarefa = document.getElementById("tarefa");
 
+meuformulario.addEventListener("submit", function (event) {
+    event.preventDefault();
 
-let t1 = document.getElementById("t1")
-let t2 = document.getElementById("t2")
-let t3 = document.getElementById("t3")
+    if (tarefa.value == "") {
+        alert("Preencha o nome da tarefa");
+        return;
+    }
 
-t1.onclick = nomeMaiusculo;
-t2.onclick = nomeMaiusculo;
-t3.onclick  = nomeMaiusculo;
+    var novatarefa = `<li>${tarefa.value}</li>`;
 
+    minhastarefas.innerHTML += novatarefa;
 
-function nomeMaiusculo(){
-this.innerHTML = this.innerHTML.toUpperCase();
-this.style.color="Blue"
-
-}
+    tarefa.value = "";
+});
