@@ -12,7 +12,7 @@
   }
   
   header h1 {
-    text-align: center;
+  text-align: center;
   }
   
   form {
@@ -27,33 +27,31 @@
     border-radius: 8px;
     border: 1px solid #ccc;
     outline: 0; 
-    
   }
   
   button{
     height: 30px;
-    border: 0;
     border-radius: 8px;
     background-color: #2a9d8f;
     color: #14213d;
     padding: 6px;
     border: 2px  solid  #2a9d8f; 
-    font:bolder;
   }
 
   button:hover{
-      background-color: black;
+      background-color: #14213d;
       color: white;
-     
   }
-  
+
    ul {
-     padding: 20px;
-     list-style-type: none;
+    padding: 20px;
+    list-style-type: none;
    }
-   
+
    ul li {
      padding: 10px;
      border-bottom: 1px solid #999;
      color: #2a9d8f;
+     display: flex;
+     justify-content: space-between;
    }

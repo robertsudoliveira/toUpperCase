@@ -2,6 +2,7 @@ var meuformulario = document.getElementById("meuformulario");
 var minhastarefas = document.getElementById("minhastarefas");
 var tarefa = document.getElementById("tarefa");
 
+
 meuformulario.addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -10,7 +11,8 @@ meuformulario.addEventListener("submit", function (event) {
         return;
     }
 
-    var novatarefa = `<li>${tarefa.value}</li>`;
+    var novatarefa = `<li>${tarefa.value} <button>deletar tarefa</button> </li>`;
+    
 
     minhastarefas.innerHTML += novatarefa;
 
