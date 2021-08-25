@@ -11,10 +11,17 @@ meuformulario.addEventListener("submit", function (event) {
         return;
     }
 
-    var novatarefa = `<li>${tarefa.value} <button>tarefa concluida</button><button>deletar tarefa</button> </li>`;
+    var novatarefa = `<li>${tarefa.value} <div> <button>tarefa concluida</button><button>deletar tarefa</button></div> </li>`;
     
 
     minhastarefas.innerHTML += novatarefa;
 
     tarefa.value = "";
 });
+
+
+function salvamento(){
+    
+}
+
+localStorage.setItem()
