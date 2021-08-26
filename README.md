@@ -12,8 +12,8 @@
 
 <h4>As seguintes tecnologias foram utilizadas: </h4>
 
-HTML
-CSS 
+HTML,
+CSS, 
 Javascript
 -
 
